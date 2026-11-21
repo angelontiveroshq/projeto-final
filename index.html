@@ -1,60 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Final</title>
+
+    <title>TIC em Trilhas</title>
+
     <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-  <header class="w-full bg-white shadow-sm">
-    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
 
-        <!-- LOGO -->
-        <a href="#" class="text-2xl font-extrabold text-blue-900 whitespace-nowrap">
-            TIC <span class="text-yellow-500">em Trilhas</span>
-        </a>
+<body class="bg-white font-sans">
 
-        <!-- BARRA DE BUSQUEDA -->
-        <div class="flex flex-1 max-w-md">
-    <div class="flex items-center w-full bg-gray-100 rounded-full px-4 py-3">
+    <!-- HEADER / NAVBAR -->
+    <header class="w-full bg-white shadow-sm">
 
-        <span class="text-gray-400 mr-3">🔍</span>
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
 
-        <input
-            type="search"
-            placeholder="Sobre o que você quer aprender?"
-            class="w-full bg-transparent outline-none text-sm text-gray-700 placeholder-gray-400"
-        >
+            <!-- LOGO -->
+            <a href="#" class="text-2xl font-extrabold text-blue-900 whitespace-nowrap">
+                TIC <span class="text-yellow-500">em Trilhas</span>
+            </a>
+
+            <!-- BARRA DE BUSQUEDA -->
+            <div class="flex flex-1 max-w-md">
+
+                <div class="flex items-center w-full bg-gray-100 rounded-full px-4 py-3">
+
+                    <span class="text-gray-400 mr-3">🔍</span>
+
+                    <input
+                        type="search"
+                        placeholder="Sobre o que você quer aprender?"
+                        class="w-full bg-transparent outline-none text-sm text-gray-700 placeholder-gray-400"
+                    >
+
+                </div>
+
+            </div>
+
+            <!-- MENU -->
+            <div class="hidden lg:flex items-center gap-7 text-gray-700 font-medium">
+
+                <a href="#areas" class="hover:text-yellow-500 transition">
+                    Áreas
+                </a>
+
+                <a href="#sobre" class="hover:text-yellow-500 transition">
+                    Sobre
+                </a>
+
+                <a href="#duvidas" class="hover:text-yellow-500 transition">
+                    Dúvidas frequentes
+                </a>
+
+            </div>
+
+            <!-- BOTÃO PORTAL -->
+            <a href="#portal"
+               class="bg-yellow-400 hover:bg-yellow-500 text-blue-950 font-bold px-5 py-3 rounded-full transition whitespace-nowrap">
+
+                Portal do Aluno
+
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTEUDO PRINCIPAL -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="bg-gray-50 py-20 px-6">
+
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+                <!-- TEXTO -->
+                <div>
+
+                    <span class="text-yellow-600 font-semibold text-sm uppercase tracking-wider">
+                        Educação e Tecnologia
+                    </span>
+
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mt-4 leading-tight">
+
+                        Trilhas em
+                        <span class="text-yellow-500">Tecnologia</span>
+
+                    </h1>
+
+                    <p class="text-gray-600 text-lg mt-6 leading-relaxed">
+
+                        Explore novos conhecimentos, desenvolva habilidades
+                        e construa seu futuro através da tecnologia.
+                        Aprenda no seu ritmo e descubra novas possibilidades.
+
+                    </p>
+
+                    <div class="mt-8">
+
+                        <a href="#trilhas"
+                           class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-4 rounded-xl transition duration-300">
+
+                            Começar a aprender →
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- AREA VISUAL -->
+                <div class="flex justify-center">
+
+                    <div class="bg-yellow-100 rounded-3xl p-12 w-full max-w-md text-center">
+
+                        <span class="text-8xl">💻</span>
+
+                        <h2 class="text-2xl font-bold text-gray-800 mt-6">
+
+                            Seu futuro começa aqui!
+
+                        </h2>
+
+                        <p class="text-gray-600 mt-3">
+
+                            Conhecimento, inovação e oportunidades.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+<!-- BANNER DE CARREIRAS -->
+<section class="bg-yellow-400 py-10 px-6">
+
+    <div class="max-w-7xl mx-auto text-center">
+
+        <h2 class="text-xl md:text-2xl font-bold italic text-gray-900">
+            Construa seu caminho, faça sua carreira!
+        </h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
+
+            <div>
+                <span class="text-4xl font-extrabold text-purple-700">1</span>
+                <p class="font-semibold text-gray-900">Explore</p>
+            </div>
+
+            <div>
+                <span class="text-4xl font-extrabold text-purple-700">2</span>
+                <p class="font-semibold text-gray-900">Aprenda</p>
+            </div>
+
+            <div>
+                <span class="text-4xl font-extrabold text-purple-700">3</span>
+                <p class="font-semibold text-gray-900">Pratique</p>
+            </div>
+
+            <div>
+                <span class="text-4xl font-extrabold text-purple-700">4</span>
+                <p class="font-semibold text-gray-900">Evolua</p>
+            </div>
+
+        </div>
 
     </div>
-</div>
 
-        <!-- MENU -->
-        <div class="hidden lg:flex items-center gap-7 text-gray-700 font-medium">
+</section>
+<!-- SEÇÃO NOSSAS ÁREAS -->
+<section id="areas" class="bg-[#202020] py-16 px-6">
 
-            <a href="#areas" class="hover:text-yellow-500 transition">
-                Áreas
+    <div class="max-w-7xl mx-auto">
+
+        <h2 class="text-3xl font-bold text-white">
+            Nossas áreas
+        </h2>
+
+        <p class="text-gray-300 mt-2 mb-10">
+            Para você explorar, escolher e começar!
+        </p>
+
+        <!-- GRID DE ÁREAS -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- CARD 1 -->
+            <a href="#" class="card bg-[#292929] hover:bg-[#353535] transition p-5">
+                <div class="text-4xl mb-4">🔗</div>
+                <h3 class="text-white font-bold text-lg">Blockchain</h3>
+                <p class="text-gray-300 text-sm mt-2">
+                    Conheça as tecnologias por trás das moedas digitais
+                    e aplicações descentralizadas.
+                </p>
             </a>
 
-            <a href="#sobre" class="hover:text-yellow-500 transition">
-                Sobre
+            <!-- CARD 2 -->
+            <a href="#" class="card bg-[#292929] hover:bg-[#353535] transition p-5">
+                <div class="text-4xl mb-4">📊</div>
+                <h3 class="text-white font-bold text-lg">
+                    Ciência de dados & Análises
+                </h3>
+                <p class="text-gray-300 text-sm mt-2">
+                    Aprenda a transformar dados em informações
+                    e decisões inteligentes.
+                </p>
             </a>
 
-            <a href="#duvidas" class="hover:text-yellow-500 transition">
-                Dúvidas frequentes
+            <!-- CARD 3 -->
+            <a href="#" class="card bg-[#292929] hover:bg-[#353535] transition p-5">
+                <div class="text-4xl mb-4">🎮</div>
+                <h3 class="text-white font-bold text-lg">
+                    Desenvolvimento de games
+                </h3>
+                <p class="text-gray-300 text-sm mt-2">
+                    Descubra como criar jogos e experiências interativas.
+                </p>
+            </a>
+
+            <!-- CARD 4 -->
+            <a href="#" class="card bg-[#292929] hover:bg-[#353535] transition p-5">
+                <div class="text-4xl mb-4">📱</div>
+                <h3 class="text-white font-bold text-lg">
+                    Desenvolvimento mobile
+                </h3>
+                <p class="text-gray-300 text-sm mt-2">
+                    Explore a criação de aplicativos para dispositivos móveis.
+                </p>
+            </a>
+
+            <!-- CARD 5 -->
+            <a href="#" class="card bg-[#292929] hover:bg-[#353535] transition p-5">
+                <div class="text-4xl mb-4">💻</div>
+                <h3 class="text-white font-bold text-lg">
+                    Desenvolvimento web
+                </h3>
+                <p class="text-gray-300 text-sm mt-2">
+                    Aprenda a desenvolver sites e aplicações para a internet.
+                </p>
+            </a>
+
+            <!-- CARD 6 -->
+            <a href="#" class="card bg-[#292929] hover:bg-[#353535] transition p-5">
+                <div class="text-4xl mb-4">🖥️</div>
+                <h3 class="text-white font-bold text-lg">
+                    Infraestrutura
+                </h3>
+                <p class="text-gray-300 text-sm mt-2">
+                    Conheça redes, servidores e infraestrutura tecnológica.
+                </p>
             </a>
 
         </div>
 
-        <!-- BOTÃO PORTAL -->
-        <a href="#portal"
-           class="bg-yellow-400 hover:bg-yellow-500 text-blue-950 font-bold px-5 py-3 rounded-full transition whitespace-nowrap">
-            Portal do Aluno
-        </a>
+    </div>
 
-    </nav>
-</header>
-</button>
+</section>
+    </main>
+
 </body>
+
 </html>
