@@ -1,269 +1,228 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>TIC em Trilhas</title>
-
     <link href="./output.css" rel="stylesheet">
-</head>
-
-<body class="bg-white font-sans">
-
+  </head>
+  <body data-theme="uffs" class="poppins-regular bg-base-100 text-font">
     <!-- HEADER / NAVBAR -->
-    <header class="w-full bg-white shadow-sm">
+    <header class="w-full bg-base-100 shadow-sm">
+      <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
+        <!-- LOGO -->
+        <a href="#" class="text-2xl poppins-extrabold text-brand-dark whitespace-nowrap">
+          TIC <span class="text-brand-accent">em Trilhas</span>
+        </a>
 
-        <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
+        <!-- BARRA DE BUSQUEDA -->
+        <div class="flex flex-1 max-w-md">
+          <div class="search-field flex items-center w-full bg-base-200 rounded-full px-4 py-3">
+            <span class="text-gray-400 mr-3">🔍</span>
+            <input
+              type="search"
+              placeholder="Sobre o que você quer aprender?"
+              class="w-full border-0 bg-transparent text-sm text-dark placeholder-gray-400 outline-none"
+            >
+          </div>
+        </div>
 
-            <!-- LOGO -->
-            <a href="#" class="text-2xl font-extrabold text-blue-900 whitespace-nowrap">
-                TIC <span class="text-yellow-500">em Trilhas</span>
-            </a>
+        <!-- MENU -->
+        <div class="hidden lg:flex items-center gap-7 text-dark poppins-medium">
+          <a href="#areas" class="hover:text-brand transition">Áreas</a>
+          <a href="#sobre" class="hover:text-brand transition">Sobre</a>
+          <a href="#duvidas" class="hover:text-brand transition">Dúvidas frequentes</a>
+        </div>
 
-            <!-- BARRA DE BUSQUEDA -->
-            <div class="flex flex-1 max-w-md">
-
-                <div class="flex items-center w-full bg-gray-100 rounded-full px-4 py-3">
-
-                    <span class="text-gray-400 mr-3">🔍</span>
-
-                    <input
-                        type="search"
-                        placeholder="Sobre o que você quer aprender?"
-                        class="w-full bg-transparent outline-none text-sm text-gray-700 placeholder-gray-400"
-                    >
-
-                </div>
-
-            </div>
-
-            <!-- MENU -->
-            <div class="hidden lg:flex items-center gap-7 text-gray-700 font-medium">
-
-                <a href="#areas" class="hover:text-yellow-500 transition">
-                    Áreas
-                </a>
-
-                <a href="#sobre" class="hover:text-yellow-500 transition">
-                    Sobre
-                </a>
-
-                <a href="#duvidas" class="hover:text-yellow-500 transition">
-                    Dúvidas frequentes
-                </a>
-
-            </div>
-
-            <!-- BOTÃO PORTAL -->
-            <a href="#portal"
-               class="bg-yellow-400 hover:bg-yellow-500 text-blue-950 font-bold px-5 py-3 rounded-full transition whitespace-nowrap">
-
-                Portal do Aluno
-
-            </a>
-
-        </nav>
-
+        <!-- BOTÃO PORTAL -->
+        <a
+          href="#portal"
+          class="btn btn-primary poppins-bold px-5 py-3 rounded-full whitespace-nowrap transition-all duration-300 ease-in-out"
+        >
+          Portal do Aluno
+        </a>
+      </nav>
     </header>
-
 
     <!-- CONTEUDO PRINCIPAL -->
     <main>
-
-        <!-- HERO SECTION -->
-        <section class="bg-gray-50 py-20 px-6">
-
-            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-
-                <!-- TEXTO -->
-                <div>
-
-                    <span class="text-yellow-600 font-semibold text-sm uppercase tracking-wider">
-                        Educação e Tecnologia
-                    </span>
-
-                    <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mt-4 leading-tight">
-
-                        Trilhas em
-                        <span class="text-yellow-500">Tecnologia</span>
-
-                    </h1>
-
-                    <p class="text-gray-600 text-lg mt-6 leading-relaxed">
-
-                        Explore novos conhecimentos, desenvolva habilidades
-                        e construa seu futuro através da tecnologia.
-                        Aprenda no seu ritmo e descubra novas possibilidades.
-
-                    </p>
-
-                    <div class="mt-8">
-
-                        <a href="#trilhas"
-                           class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-4 rounded-xl transition duration-300">
-
-                            Começar a aprender →
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <!-- AREA VISUAL -->
-                <div class="flex justify-center">
-
-                    <div class="bg-yellow-100 rounded-3xl p-12 w-full max-w-md text-center">
-
-                        <span class="text-8xl">💻</span>
-
-                        <h2 class="text-2xl font-bold text-gray-800 mt-6">
-
-                            Seu futuro começa aqui!
-
-                        </h2>
-
-                        <p class="text-gray-600 mt-3">
-
-                            Conhecimento, inovação e oportunidades.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
+      <!-- HERO SECTION -->
+      <section class="bg-light py-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <!-- TEXTO -->
+          <div>
+            <div class="mb-6">
+              <span class="inline-flex items-center gap-2 bg-brand-light text-brand px-4 py-2 rounded-md text-sm poppins-semibold">
+                <span>🎓</span>
+                Universidade Federal da Fronteira Sul | UFFS
+              </span>
             </div>
-
-        </section>
-<!-- BANNER DE CARREIRAS -->
-<section class="bg-yellow-400 py-10 px-6">
-
-    <div class="max-w-7xl mx-auto text-center">
-
-        <h2 class="text-xl md:text-2xl font-bold italic text-gray-900">
-            Construa seu caminho, faça sua carreira!
-        </h2>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
-
-            <div>
-                <span class="text-4xl font-extrabold text-purple-700">1</span>
-                <p class="font-semibold text-gray-900">Explore</p>
+            <span class="text-brand poppins-semibold text-sm uppercase tracking-wider">
+              Educação, Tecnologia e Inovação
+            </span>
+            <h1 class="text-4xl md:text-6xl poppins-bold text-font mt-4 leading-tight">
+              Trilhas em
+              <span class="text-brand">Tecnologia</span>
+            </h1>
+            <p class="text-dark text-lg mt-6 leading-relaxed">
+              Explore novos conhecimentos, desenvolva habilidades e construa seu futuro através da
+              tecnologia. Aprenda no seu ritmo e descubra novas possibilidades.
+            </p>
+            <div class="mt-8">
+              <a
+                href="#trilhas"
+                class="btn btn-secondary poppins-semibold px-8 py-4 rounded-xl"
+              >
+                Começar a aprender →
+              </a>
             </div>
+          </div>
 
-            <div>
-                <span class="text-4xl font-extrabold text-purple-700">2</span>
-                <p class="font-semibold text-gray-900">Aprenda</p>
+          <!-- AREA VISUAL -->
+          <div class="flex justify-center">
+            <div class="bg-brand-light rounded-3xl p-12 w-full max-w-md text-center">
+              <span class="text-8xl">💻</span>
+              <h2 class="text-2xl poppins-bold text-brand-dark mt-6">Seu futuro começa aqui!</h2>
             </div>
-
-            <div>
-                <span class="text-4xl font-extrabold text-purple-700">3</span>
-                <p class="font-semibold text-gray-900">Pratique</p>
-            </div>
-
-            <div>
-                <span class="text-4xl font-extrabold text-purple-700">4</span>
-                <p class="font-semibold text-gray-900">Evolua</p>
-            </div>
-
+          </div>
         </div>
+      </section>
 
-    </div>
+      <!-- BANNER INSTITUCIONAL -->
+      <section class="bg-gradient-to-r from-brand-dark to-brand-accent py-12 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+          <h2 class="text-2xl md:text-3xl poppins-bold text-white">
+            Explore o conhecimento. Desenvolva competências. Transforme o futuro.
+          </h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-10">
+            <div>
+              <span class="text-4xl poppins-extrabold text-brand-soft">1</span>
+              <p class="poppins-semibold text-white mt-2">Explore</p>
+            </div>
+            <div>
+              <span class="text-4xl poppins-extrabold text-brand-soft">2</span>
+              <p class="poppins-semibold text-white mt-2">Aprenda</p>
+            </div>
+            <div>
+              <span class="text-4xl poppins-extrabold text-brand-soft">3</span>
+              <p class="poppins-semibold text-white mt-2">Desenvolva</p>
+            </div>
+            <div>
+              <span class="text-4xl poppins-extrabold text-brand-soft">4</span>
+              <p class="poppins-semibold text-white mt-2">Inove</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-</section>
-<!-- SEÇÃO NOSSAS ÁREAS -->
-<section id="areas" class="bg-[#202020] py-16 px-6">
+      <!-- ÁREAS DO CONHECIMENTO -->
+      <section id="areas" class="bg-brand-light py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-12">
+            <span class="text-brand-accent poppins-semibold uppercase tracking-wider text-sm">
+              Explore possibilidades
+            </span>
+            <h2 class="text-3xl md:text-4xl poppins-bold text-brand-dark mt-3">
+              Áreas do Conhecimento
+            </h2>
+            <p class="text-dark mt-4 max-w-2xl mx-auto">
+              Conheça diferentes campos da tecnologia e explore oportunidades de aprendizagem e
+              desenvolvimento.
+            </p>
+          </div>
 
-    <div class="max-w-7xl mx-auto">
-
-        <h2 class="text-3xl font-bold text-white">
-            Nossas áreas
-        </h2>
-
-        <p class="text-gray-300 mt-2 mb-10">
-            Para você explorar, escolher e começar!
-        </p>
-
-        <!-- GRID DE ÁREAS -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
             <!-- CARD 1 -->
-            <a href="#" class="card bg-[#292929] hover:bg-[#353535] transition p-5">
-                <div class="text-4xl mb-4">🔗</div>
-                <h3 class="text-white font-bold text-lg">Blockchain</h3>
-                <p class="text-gray-300 text-sm mt-2">
-                    Conheça as tecnologias por trás das moedas digitais
-                    e aplicações descentralizadas.
+            <div class="card bg-base-100 shadow-sm hover:shadow-lg transition">
+              <div class="card-body p-8">
+                <span class="text-4xl">🔗</span>
+                <h3 class="text-xl poppins-bold text-brand-dark mt-5">Blockchain</h3>
+                <p class="text-dark mt-3">
+                  Fundamentos, aplicações e tecnologias descentralizadas.
                 </p>
-            </a>
+              </div>
+            </div>
 
             <!-- CARD 2 -->
-            <a href="#" class="card bg-[#292929] hover:bg-[#353535] transition p-5">
-                <div class="text-4xl mb-4">📊</div>
-                <h3 class="text-white font-bold text-lg">
-                    Ciência de dados & Análises
+            <div class="card bg-base-100 shadow-sm hover:shadow-lg transition">
+              <div class="card-body p-8">
+                <span class="text-4xl">📊</span>
+                <h3 class="text-xl poppins-bold text-brand-dark mt-5">
+                  Ciência de Dados & Análises
                 </h3>
-                <p class="text-gray-300 text-sm mt-2">
-                    Aprenda a transformar dados em informações
-                    e decisões inteligentes.
+                <p class="text-dark mt-3">
+                  Análise de dados, interpretação e apoio à tomada de decisões.
                 </p>
-            </a>
+              </div>
+            </div>
 
             <!-- CARD 3 -->
-            <a href="#" class="card bg-[#292929] hover:bg-[#353535] transition p-5">
-                <div class="text-4xl mb-4">🎮</div>
-                <h3 class="text-white font-bold text-lg">
-                    Desenvolvimento de games
+            <div class="card bg-base-100 shadow-sm hover:shadow-lg transition">
+              <div class="card-body p-8">
+                <span class="text-4xl">🎮</span>
+                <h3 class="text-xl poppins-bold text-brand-dark mt-5">
+                  Desenvolvimento de Games
                 </h3>
-                <p class="text-gray-300 text-sm mt-2">
-                    Descubra como criar jogos e experiências interativas.
+                <p class="text-dark mt-3">
+                  Conceitos, ferramentas e desenvolvimento de jogos digitais.
                 </p>
-            </a>
+              </div>
+            </div>
 
             <!-- CARD 4 -->
-            <a href="#" class="card bg-[#292929] hover:bg-[#353535] transition p-5">
-                <div class="text-4xl mb-4">📱</div>
-                <h3 class="text-white font-bold text-lg">
-                    Desenvolvimento mobile
+            <div class="card bg-base-100 shadow-sm hover:shadow-lg transition">
+              <div class="card-body p-8">
+                <span class="text-4xl">📱</span>
+                <h3 class="text-xl poppins-bold text-brand-dark mt-5">
+                  Desenvolvimento Mobile
                 </h3>
-                <p class="text-gray-300 text-sm mt-2">
-                    Explore a criação de aplicativos para dispositivos móveis.
+                <p class="text-dark mt-3">
+                  Tecnologias e práticas para criação de aplicações móveis.
                 </p>
-            </a>
+              </div>
+            </div>
 
             <!-- CARD 5 -->
-            <a href="#" class="card bg-[#292929] hover:bg-[#353535] transition p-5">
-                <div class="text-4xl mb-4">💻</div>
-                <h3 class="text-white font-bold text-lg">
-                    Desenvolvimento web
+            <div class="card bg-base-100 shadow-sm hover:shadow-lg transition">
+              <div class="card-body p-8">
+                <span class="text-4xl">🌐</span>
+                <h3 class="text-xl poppins-bold text-brand-dark mt-5">
+                  Desenvolvimento Web
                 </h3>
-                <p class="text-gray-300 text-sm mt-2">
-                    Aprenda a desenvolver sites e aplicações para a internet.
+                <p class="text-dark mt-3">
+                  Desenvolvimento de interfaces, sistemas e aplicações web.
                 </p>
-            </a>
+              </div>
+            </div>
 
             <!-- CARD 6 -->
-            <a href="#" class="card bg-[#292929] hover:bg-[#353535] transition p-5">
-                <div class="text-4xl mb-4">🖥️</div>
-                <h3 class="text-white font-bold text-lg">
-                    Infraestrutura
-                </h3>
-                <p class="text-gray-300 text-sm mt-2">
-                    Conheça redes, servidores e infraestrutura tecnológica.
+            <div class="card bg-base-100 shadow-sm hover:shadow-lg transition">
+              <div class="card-body p-8">
+                <span class="text-4xl">🖥️</span>
+                <h3 class="text-xl poppins-bold text-brand-dark mt-5">Infraestrutura de TI</h3>
+                <p class="text-dark mt-3">
+                  Redes, servidores, sistemas e infraestrutura tecnológica.
                 </p>
-            </a>
-
+              </div>
+            </div>
+          </div>
         </div>
-
-    </div>
-
-</section>
+      </section>
     </main>
 
-</body>
-
+    <!-- FOOTER INSTITUCIONAL -->
+    <footer class="bg-brand-dark text-white py-8 px-6">
+      <div class="max-w-7xl mx-auto text-center">
+        <h3 class="text-xl poppins-bold mb-2">TIC em Trilhas</h3>
+        <p class="text-brand-soft text-sm">
+          Projeto acadêmico desenvolvido por estudante da Universidade Federal da Fronteira Sul –
+          UFFS.
+        </p>
+        <p class="text-brand-soft text-sm mt-2">Campus Chapecó – Santa Catarina</p>
+        <p class="text-xs text-gray-300 mt-5">
+          © 2026 TIC em Trilhas. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
