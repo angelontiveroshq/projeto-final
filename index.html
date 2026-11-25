@@ -19,11 +19,13 @@
         <div class="flex flex-1 max-w-md">
           <div class="search-field flex items-center w-full bg-base-200 rounded-full px-4 py-3">
             <span class="text-gray-400 mr-3">🔍</span>
-            <input
-              type="search"
-              placeholder="Sobre o que você quer aprender?"
-              class="w-full border-0 bg-transparent text-sm text-dark placeholder-gray-400 outline-none"
-            >
+           <input
+    id="buscaCursos"
+    type="search"
+    placeholder="Sobre o que você quer aprender?"
+    class="w-full bg-transparent outline-none text-sm text-gray-700 placeholder-gray-400"
+    autocomplete="off"
+>
           </div>
         </div>
 
@@ -34,13 +36,15 @@
           <a href="#duvidas" class="hover:text-brand transition">Dúvidas frequentes</a>
         </div>
 
-        <!-- BOTÃO PORTAL -->
-        <a
-          href="#portal"
-          class="btn btn-primary poppins-bold px-5 py-3 rounded-full whitespace-nowrap transition-all duration-300 ease-in-out"
-        >
-          Portal do Aluno
-        </a>
+  <!-- BOTÃO PORTAL DO ALUNO -->
+<a href="https://uffs.edu.br/uffs/home/area-do-aluno"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="bg-brand hover:bg-brand-dark text-white poppins-semibold px-5 py-3 rounded-full transition-all duration-300 whitespace-nowrap">
+
+    Portal do Aluno →
+
+</a>
       </nav>
     </header>
 
@@ -203,6 +207,216 @@
                 <p class="text-dark mt-3">
                   Redes, servidores, sistemas e infraestrutura tecnológica.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CATÁLOGO DE CURSOS -->
+      <section
+        id="trilhas"
+        class="bg-gradient-to-br from-brand-light via-base-100 to-brand-soft py-20 px-6"
+      >
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="badge badge-secondary badge-outline poppins-semibold">
+              Formação Acadêmica e Tecnológica
+            </span>
+            <h2 class="text-3xl md:text-4xl poppins-bold text-brand-dark mt-4">
+              Trilhas de Aprendizagem para Estudantes
+            </h2>
+            <div class="w-20 h-1 bg-brand-accent rounded-full mx-auto mt-5"></div>
+            <p class="text-dark mt-5">
+              Um espaço de aprendizagem voltado aos estudantes da UFFS, com conteúdos que
+              complementam a formação acadêmica, estimulam o pensamento crítico e desenvolvem
+              competências digitais.
+            </p>
+          </div>
+
+          <!-- TRILHAS DE FORMAÇÃO ACADÊMICA -->
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- CARD 1 -->
+            <article class="card bg-base-100 border border-brand-light rounded-2xl shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-accent hover:shadow-lg">
+              <div class="card-body p-7">
+                <div class="flex items-center justify-between">
+                  <div class="w-14 h-14 rounded-xl flex items-center justify-center text-3xl bg-brand-light text-brand">
+                    🤖
+                  </div>
+                  <span class="badge badge-primary badge-outline poppins-semibold">01</span>
+                </div>
+                <h3 class="text-xl poppins-bold text-brand-dark mt-5">Inteligência Artificial</h3>
+                <p class="text-dark mt-3">
+                  Fundamentos da inteligência artificial, aplicações acadêmicas e uso responsável
+                  das ferramentas de IA.
+                </p>
+                <a href="#sobre" class="link link-hover text-brand poppins-semibold mt-5">
+                  Conhecer a trilha →
+                </a>
+              </div>
+            </article>
+
+            <!-- CARD 2 -->
+            <article class="card bg-base-100 border border-brand-light rounded-2xl shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-accent hover:shadow-lg">
+              <div class="card-body p-7">
+                <div class="flex items-center justify-between">
+                  <div class="w-14 h-14 rounded-xl flex items-center justify-center text-3xl bg-brand-accent text-white">
+                    💻
+                  </div>
+                  <span class="badge badge-primary badge-outline poppins-semibold">02</span>
+                </div>
+                <h3 class="text-xl poppins-bold text-brand-dark mt-5">
+                  Programação e Desenvolvimento Web
+                </h3>
+                <p class="text-dark mt-3">
+                  Lógica de programação, desenvolvimento de páginas web e criação de soluções
+                  digitais.
+                </p>
+                <a href="#sobre" class="link link-hover text-brand poppins-semibold mt-5">
+                  Conhecer a trilha →
+                </a>
+              </div>
+            </article>
+
+            <!-- CARD 3 -->
+            <article class="card bg-base-100 border border-brand-light rounded-2xl shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-accent hover:shadow-lg">
+              <div class="card-body p-7">
+                <div class="flex items-center justify-between">
+                  <div class="w-14 h-14 rounded-xl flex items-center justify-center text-3xl bg-brand-secondary text-white">
+                    📊
+                  </div>
+                  <span class="badge badge-primary badge-outline poppins-semibold">03</span>
+                </div>
+                <h3 class="text-xl poppins-bold text-brand-dark mt-5">Ciência de Dados</h3>
+                <p class="text-dark mt-3">
+                  Análise, interpretação e visualização de dados aplicadas à pesquisa e ao
+                  conhecimento científico.
+                </p>
+                <a href="#sobre" class="link link-hover text-brand poppins-semibold mt-5">
+                  Conhecer a trilha →
+                </a>
+              </div>
+            </article>
+
+            <!-- CARD 4 -->
+            <article class="card bg-base-100 border border-brand-light rounded-2xl shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-accent hover:shadow-lg">
+              <div class="card-body p-7">
+                <div class="flex items-center justify-between">
+                  <div class="w-14 h-14 rounded-xl flex items-center justify-center text-3xl bg-brand-soft text-brand-dark">
+                    📱
+                  </div>
+                  <span class="badge badge-primary badge-outline poppins-semibold">04</span>
+                </div>
+                <h3 class="text-xl poppins-bold text-brand-dark mt-5">
+                  Desenvolvimento de Aplicações
+                </h3>
+                <p class="text-dark mt-3">
+                  Conceitos e tecnologias para desenvolver aplicações e projetos digitais.
+                </p>
+                <a href="#sobre" class="link link-hover text-brand poppins-semibold mt-5">
+                  Conhecer a trilha →
+                </a>
+              </div>
+            </article>
+
+            <!-- CARD 5 -->
+            <article class="card bg-base-100 border border-brand-light rounded-2xl shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-accent hover:shadow-lg">
+              <div class="card-body p-7">
+                <div class="flex items-center justify-between">
+                  <div class="w-14 h-14 rounded-xl flex items-center justify-center text-3xl bg-brand-dark text-white">
+                    🔐
+                  </div>
+                  <span class="badge badge-primary badge-outline poppins-semibold">05</span>
+                </div>
+                <h3 class="text-xl poppins-bold text-brand-dark mt-5">
+                  Segurança da Informação
+                </h3>
+                <p class="text-dark mt-3">
+                  Proteção de dados, privacidade, cidadania digital e segurança no ambiente
+                  acadêmico.
+                </p>
+                <a href="#sobre" class="link link-hover text-brand poppins-semibold mt-5">
+                  Conhecer a trilha →
+                </a>
+              </div>
+            </article>
+
+            <!-- CARD 6 -->
+            <article class="card bg-base-100 border border-brand-light rounded-2xl shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-accent hover:shadow-lg">
+              <div class="card-body p-7">
+                <div class="flex items-center justify-between">
+                  <div class="w-14 h-14 rounded-xl flex items-center justify-center text-3xl bg-base-200 text-brand-accent">
+                    🎓
+                  </div>
+                  <span class="badge badge-primary badge-outline poppins-semibold">06</span>
+                </div>
+                <h3 class="text-xl poppins-bold text-brand-dark mt-5">
+                  Tecnologias Educacionais
+                </h3>
+                <p class="text-dark mt-3">
+                  Ferramentas digitais e metodologias inovadoras para apoiar o ensino, a pesquisa e
+                  a aprendizagem.
+                </p>
+                <a href="#sobre" class="link link-hover text-brand poppins-semibold mt-5">
+                  Conhecer a trilha →
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+        <!-- SOBRE O PROJETO -->
+      <section id="sobre" class="bg-gradient-to-br from-brand-dark to-brand-accent py-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <!-- TEXTO INSTITUCIONAL -->
+          <div>
+            <span class="badge badge-secondary rounded-full px-4 poppins-semibold">Conheça nossa proposta</span>
+            <h2 class="text-3xl md:text-4xl poppins-bold text-white mt-5">Sobre o Projeto</h2>
+            <div class="w-20 h-1 bg-brand-soft rounded-full mt-5"></div>
+
+            <p class="text-white/90 mt-6 leading-relaxed">
+              O TIC em Trilhas é uma proposta de ambiente digital de aprendizagem voltada aos
+              estudantes universitários, com foco nas Tecnologias da Informação e Comunicação.
+            </p>
+
+            <p class="text-white/90 mt-4 leading-relaxed">
+              O projeto busca reunir conteúdos, trilhas de aprendizagem e recursos educacionais que
+              contribuam para a formação acadêmica, o desenvolvimento de competências digitais e a
+              construção do conhecimento.
+            </p>
+
+            <p class="text-white/90 mt-4 leading-relaxed">
+              A iniciativa está direcionada à comunidade estudantil da Universidade Federal da
+              Fronteira Sul (UFFS), incentivando a aprendizagem contínua, a criatividade e a
+              inovação.
+            </p>
+          </div>
+
+          <!-- DESTAQUE VISUAL -->
+          <div class="flex justify-center">
+            <div class="card bg-base-100 w-full max-w-md rounded-3xl shadow-xl">
+              <div class="card-body items-center p-10 text-center">
+                <div class="w-24 h-24 flex items-center justify-center rounded-3xl bg-brand-light text-5xl shadow-sm">
+                  🎓
+                </div>
+
+                <span class="badge badge-primary rounded-full px-4 poppins-semibold mt-2">
+                  UFFS · Aprendizagem
+                </span>
+
+                <h3 class="text-2xl poppins-bold text-brand-dark mt-3">
+                  Aprender, explorar e evoluir
+                </h3>
+
+                <p class="text-dark mt-3 leading-relaxed">
+                  A tecnologia como ferramenta de aprendizagem, conhecimento e transformação
+                  acadêmica.
+                </p>
+
+                <div class="mt-5 flex justify-center gap-3 flex-wrap">
+                  <span class="badge badge-primary rounded-full px-4">Educação</span>
+                  <span class="badge badge-secondary rounded-full px-4">Tecnologia</span>
+                  <span class="badge badge-accent rounded-full px-4">Inovação</span>
+                </div>
               </div>
             </div>
           </div>

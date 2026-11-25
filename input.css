@@ -19,6 +19,7 @@
   --color-secondary: #cd7537;
   --color-secondary-content: #ffffff;
   --color-accent: #238653;
+  --color-accent-content: #ffffff;
 }
 
 @theme inline {
@@ -27,6 +28,7 @@
   --color-brand-light: #e5f2e9;
   --color-brand-soft: #b7dcc5;
   --color-brand-accent: var(--color-accent);
+  --color-brand-secondary: var(--color-secondary);
   --color-dark: #555555;
   --color-light: #f1f3fa;
   --color-font: #1c2035;
